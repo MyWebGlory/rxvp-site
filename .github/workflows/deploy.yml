@@ -1,0 +1,98 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+  PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: true
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
+      - name: Install dependencies and resolve Chrome
+        run: |
+          set -euo pipefail
+
+          npm ci --prefer-offline --no-audit --no-fund &
+          npm_pid=$!
+
+          (
+            for chrome_bin in \
+              google-chrome-stable \
+              google-chrome \
+              chromium \
+              chromium-browser; do
+              if command -v "$chrome_bin" >/dev/null 2>&1; then
+                echo "PUPPETEER_EXECUTABLE_PATH=$(command -v "$chrome_bin")" >> "$GITHUB_ENV"
+                exit 0
+              fi
+            done
+
+            sudo apt-get update
+            sudo apt-get install -y google-chrome-stable
+            echo "PUPPETEER_EXECUTABLE_PATH=$(command -v google-chrome-stable)" >> "$GITHUB_ENV"
+          ) &
+          chrome_pid=$!
+
+          set +e
+          wait "$npm_pid"
+          npm_status=$?
+          wait "$chrome_pid"
+          chrome_status=$?
+          set -e
+
+          if [ "$npm_status" -ne 0 ]; then
+            exit "$npm_status"
+          fi
+
+          if [ "$chrome_status" -ne 0 ]; then
+            exit "$chrome_status"
+          fi
+
+      - name: Build
+        run: npm run build
+        env:
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}/
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
