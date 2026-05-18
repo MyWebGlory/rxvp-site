@@ -1,0 +1,202 @@
+import { useMemo } from "react";
+import { useSearchParams } from "react-router-dom";
+import SEO, { breadcrumbSchema } from "@/components/SEO";
+import { Footer, Header } from "@/components/SiteChrome";
+
+const publicSpeakingDescription =
+  "AMPLIFY is RXvP's public speaking and executive presence program for life sciences leaders preparing for panels, fireside chats, and high-visibility engagements.";
+
+const publicSpeakingSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "@id": "https://rxvp.org/public-speaking/",
+  url: "https://rxvp.org/public-speaking/",
+  name: "Public Speaking",
+  description: publicSpeakingDescription,
+  inLanguage: "en-US",
+};
+
+function formatCompanyLocation(company: string | null, location: string | null) {
+  const cleanCompany = company?.trim() || "your company";
+  const cleanLocation = location?.trim();
+
+  return cleanLocation ? `${cleanCompany} in ${cleanLocation}` : cleanCompany;
+}
+
+export default function PublicSpeaking() {
+  const [searchParams] = useSearchParams();
+  const companyName = searchParams.get("company")?.trim() || "your company";
+  const companyLocation = useMemo(
+    () => formatCompanyLocation(searchParams.get("company"), searchParams.get("location")),
+    [searchParams],
+  );
+
+  return (
+    <div className="page-template-public-speaking">
+      <SEO
+        title="Public Speaking"
+        description={publicSpeakingDescription}
+        canonicalPath="/public-speaking/"
+        structuredData={[
+          publicSpeakingSchema,
+          breadcrumbSchema([
+            { name: "RXvP", path: "/" },
+            { name: "Public Speaking", path: "/public-speaking/" },
+          ]),
+        ]}
+      />
+      <div id="banner"></div>
+      <a href="#main_content" className="sr-only">
+        Skip to main content
+      </a>
+      <Header />
+      <main id="main_content" className="main-content-wrap">
+        <section className="public-speaking-hero home-hero relative default-hero min-h-[580px] lg:min-h-[700px]">
+          <div className="absolute inset-y-0 left-0 w-1/2 hidden lg:block">
+            <img src="/assets/Gold.webp" alt="Gold texture" className="absolute inset-0 w-full h-full object-cover object-center" />
+            <div className="overlay absolute w-full h-full bg-black opacity-50 z-10"></div>
+          </div>
+
+          <div className="absolute inset-y-0 right-0 w-1/2 hidden lg:flex lg:pb-12">
+            <img src="/assets/Crowd.webp" alt="Crowd" className="absolute inset-0 w-full h-full object-cover object-center" />
+          </div>
+
+          <div className="lg:hidden flex flex-col lg:min-h-[580px]">
+            <div className="relative w-full h-1/2">
+              <img src="/assets/Gold.webp" alt="Gold texture" className="absolute inset-0 w-full h-full object-cover object-center" />
+              <div className="overlay absolute w-full h-full bg-black opacity-50 z-10"></div>
+              <div className="lg:hidden container relative">
+                <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-48 ml-10 md:pt-40 pb-20">
+                  <p className="public-speaking-kicker">Proudly presents</p>
+                  <h1 className="font-Primary text-white">AMPLIFY</h1>
+                  <p className="mt-4 text-xl font-Secondary text-white">
+                    Executive presence and high-impact public speaking for life sciences leaders
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="relative w-full flex h-[450px]">
+              <img src="/assets/Crowd.webp" alt="Crowd" className="absolute inset-0 w-full h-full object-cover object-center" />
+            </div>
+          </div>
+
+          <div className="hidden lg:block container relative">
+            <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-40 public-speaking-hero-copy">
+              <p className="public-speaking-kicker">Proudly presents</p>
+              <h1 className="font-Primary text-white">AMPLIFY</h1>
+              <p className="mt-4 text-xl font-Secondary text-white">
+                Executive presence and high-impact public speaking for life sciences leaders
+              </p>
+            </div>
+          </div>
+
+          <img src="/assets/Mic.webp" alt="Microphone" className="absolute left-1 lg:left-3 xl:left-6 bottom-[450px] lg:bottom-0 w-20 md:w-24 lg:w-32 z-20" />
+          <img src="/assets/Woman.webp" alt="Speaker" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 hidden lg:block h-[85%]" />
+        </section>
+
+        <section className="bg-white public-speaking-intro">
+          <div className="container public-speaking-grid">
+            <div>
+              <h2 className="font-Primary text-dark">
+                Elevating the next generation of enterprise leaders at {companyLocation}.
+              </h2>
+              <p className="font-Secondary text-dark">
+                As leaders step into broader enterprise influence, the ability to communicate with confidence, clarity,
+                and authority becomes a defining advantage. AMPLIFY is a premium development experience designed to help
+                emerging senior leaders strengthen public speaking and executive presence.
+              </p>
+            </div>
+            <aside className="public-speaking-card">
+              <p className="public-speaking-label">Core advantages</p>
+              <ul>
+                <li>Speaking practice in 3 panels</li>
+                <li>Practitioner speaking coaches who know the life sciences stage</li>
+              </ul>
+            </aside>
+          </div>
+        </section>
+
+        <section className="public-speaking-program bg-[#F8F9FA]">
+          <div className="container">
+            <div className="public-speaking-columns">
+              <article>
+                <p className="public-speaking-label">Real-world speaking opportunities</p>
+                <h2 className="font-Primary text-dark">Built for visible, high-value forums</h2>
+                <p className="font-Secondary text-dark">
+                  Each participant receives three high-value speaking opportunities over six months. Experiences may be
+                  virtual or in person and designed for internal or external audiences.
+                </p>
+                <ul className="public-speaking-pills">
+                  <li>RXvP panels</li>
+                  <li>RXvP fireside chats</li>
+                  <li>Strategic stakeholder engagements</li>
+                  <li>Industry conferences</li>
+                  <li>RXvP/ERG collaborations</li>
+                </ul>
+              </article>
+              <article>
+                <p className="public-speaking-label">Practitioner-led coaching</p>
+                <h2 className="font-Primary text-dark">Coaching from experienced life sciences voices</h2>
+                <p className="font-Secondary text-dark">
+                  RXvP speaker coaches are accomplished, active voices in the life sciences industry who bring firsthand
+                  credibility, insight, and candid feedback to every session.
+                </p>
+                <ul className="public-speaking-list">
+                  <li>Speaker delivery and concise storytelling</li>
+                  <li>Audience engagement and executive presence</li>
+                  <li>Panelist, moderator, and interviewer readiness</li>
+                </ul>
+              </article>
+            </div>
+
+            <div className="public-speaking-columns public-speaking-detail">
+              <article>
+                <p className="public-speaking-label">Program objectives</p>
+                <ul className="public-speaking-list">
+                  <li>Communicate with executive-level confidence and credibility in internal meetings</li>
+                  <li>Strengthen leadership presence in high-visibility forums</li>
+                  <li>Deliver clear, concise, and compelling messages under pressure</li>
+                  <li>Engage diverse audiences with authenticity and authority</li>
+                  <li>Represent {companyName} with thought leadership impact</li>
+                  <li>Navigate panel discussions and live Q&amp;A with agility and confidence</li>
+                </ul>
+              </article>
+              <article>
+                <p className="public-speaking-label">Signature development areas</p>
+                <h3>Executive Presence Mastery</h3>
+                <p>Participants strengthen the core qualities that help leaders command attention, build trust, and inspire confidence.</p>
+                <h3>Strategic Public Speaking Excellence</h3>
+                <p>Focused coaching helps participants turn ideas into compelling messages that resonate and move audiences to action.</p>
+                <h3>Panel and Fireside Chat Readiness</h3>
+                <p>Participants gain practical tools to show up with poise, insight, and agility in high-visibility speaking moments.</p>
+              </article>
+            </div>
+
+            <section className="public-speaking-coaches">
+              <p className="public-speaking-label">Our Practitioner Coaches</p>
+              <div className="public-speaking-coach-grid">
+                <article>
+                  <h3>Deepa Desai</h3>
+                  <p>Customized short bio to be added when provided by RXvP.</p>
+                </article>
+                <article>
+                  <h3>Bonnie Lappin</h3>
+                  <p>
+                    Bonnie Lappin co-founded the Ambassador Program for the Healthcare Businesswomen's Association in
+                    2013. Designed as a global leadership development program for HBA corporate partners, it grew under
+                    her leadership from 2013 to 2025 into a signature experience for more than 11,000 participants.
+                  </p>
+                  <p>
+                    Today, Bonnie continues this work through RXvP, a global speakers bureau that curates panels for
+                    experienced and emerging speakers.
+                  </p>
+                </article>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}

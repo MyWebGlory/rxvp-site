@@ -12,7 +12,10 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="flex gap-4">
+          <div className="flex gap-4 items-center">
+            <a className="rxvp-nav-link" href="/public-speaking/">
+              Public Speaking
+            </a>
             <div className="flex">
               <a className="btn btn-alt" href="/contact/">
                 Apply for a Speaker Invitation
@@ -38,6 +41,7 @@ export function Footer() {
           </div>
           <div className="rxvp-footer-links" aria-label="Footer">
             <a href="/">Home</a>
+            <a href="/public-speaking/">Public Speaking</a>
             <a href="/contact/">Speaker Invitation</a>
             <a href="/#rxvp-apac-new-section">Asia Pacific</a>
           </div>
