@@ -1,5 +1,6 @@
 import SEO, { breadcrumbSchema } from "@/components/SEO";
 import StaticHtmlPage from "@/components/StaticHtmlPage";
+import { Footer, Header } from "@/components/SiteChrome";
 import { DEFAULT_DESCRIPTION } from "@/lib/site";
 
 const homePageSchema = {
@@ -21,8 +22,10 @@ export default function Home() {
         canonicalPath="/"
         structuredData={[homePageSchema, breadcrumbSchema([{ name: "RXvP", path: "/" }])]}
       />
+      <Header />
       <h1 className="sr-only">RXvP | Exclusive Global Speakers Bureau for Life Science Executives</h1>
       <StaticHtmlPage contentUrl="/content/home.html" containerId="legacy-home-content" />
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
 import { CONTACTS } from "@/lib/site";
+import { NavLink } from "react-router-dom";
 
 export function Header() {
   return (
@@ -13,9 +14,9 @@ export function Header() {
 
         <div className="flex items-center gap-4">
           <div className="flex gap-4 items-center">
-            <a className="rxvp-nav-link" href="/public-speaking/">
+            <NavLink className="rxvp-nav-link" to="/public-speaking/">
               Public Speaking
-            </a>
+            </NavLink>
             <div className="flex">
               <a className="btn btn-alt" href="/contact/">
                 Apply for a Speaker Invitation
@@ -43,11 +44,10 @@ export function Footer() {
             <a href="/">Home</a>
             <a href="/public-speaking/">Public Speaking</a>
             <a href="/contact/">Speaker Invitation</a>
-            <a href="/#rxvp-apac-new-section">Asia Pacific</a>
           </div>
         </div>
         <div className="text-gray-300 font-Secondary text-lg w-full pt-4 mt-4 border-t border-solid border-gray-300 rxvp-footer-bottom">
-          <p>© 2025 RxVP. All rights reserved. Powered by Insight Marketing Group</p>
+          <p>© 2025 RxVP. All rights reserved.</p>
           <div className="footer-contact">
             {CONTACTS.map((contact) => (
               <a key={contact.email} href={`mailto:${contact.email}`}>

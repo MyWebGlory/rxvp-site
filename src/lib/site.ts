@@ -12,7 +12,7 @@ export const CONTACTS = [
     name: "Suzette DiMascio",
     title: "Co-Founder, Executive Healthcare Strategist",
     email: "suzette@rxvp.org",
-    image: "/assets/suzette-dimascio.webp",
+    image: "/assets/suzette-dimascio.jpeg",
   },
 ] as const;
 export const DEFAULT_DESCRIPTION =
