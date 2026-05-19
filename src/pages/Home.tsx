@@ -22,9 +22,15 @@ export default function Home() {
         canonicalPath="/"
         structuredData={[homePageSchema, breadcrumbSchema([{ name: "RXvP", path: "/" }])]}
       />
+      <div id="banner"></div>
+      <a href="#main_content" className="sr-only">
+        Skip to main content
+      </a>
       <Header />
-      <h1 className="sr-only">RXvP | Exclusive Global Speakers Bureau for Life Science Executives</h1>
-      <StaticHtmlPage contentUrl="/content/home.html" containerId="legacy-home-content" />
+      <main id="main_content" className="main-content-wrap">
+        <h1 className="sr-only">RXvP | Exclusive Global Speakers Bureau for Life Science Executives</h1>
+        <StaticHtmlPage contentUrl="/content/home.html" containerId="legacy-home-content" sectionKey="home" />
+      </main>
       <Footer />
     </>
   );

@@ -1,6 +1,14 @@
 export const SITE_URL = "https://rxvp.org";
 export const SITE_NAME = "RXvP";
 export const CONTACT_EMAIL = "bonnie@rxvp.org";
+export const PRIMARY_NAV_ITEMS = [
+  { label: "Home", to: "/", end: true },
+  { label: "Speakers", to: "/speakers/", end: false },
+  { label: "Events", to: "/events/", end: false },
+  { label: "About", to: "/about/", end: false },
+  { label: "Leadership", to: "/leadership/", end: false },
+  { label: "Public Speaking", to: "/public-speaking/", end: false },
+] as const;
 export const CONTACTS = [
   {
     name: "Bonnie Lappin",

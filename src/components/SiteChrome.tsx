@@ -1,4 +1,4 @@
-import { CONTACTS } from "@/lib/site";
+import { CONTACTS, PRIMARY_NAV_ITEMS } from "@/lib/site";
 import { NavLink } from "react-router-dom";
 
 export function Header() {
@@ -13,10 +13,12 @@ export function Header() {
         </div>
 
         <div className="flex items-center gap-4">
-          <div className="flex gap-4 items-center">
-            <NavLink className="rxvp-nav-link" to="/public-speaking/">
-              Public Speaking
-            </NavLink>
+          <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2">
+            {PRIMARY_NAV_ITEMS.map((item) => (
+              <NavLink key={item.to} className="rxvp-nav-link" to={item.to} end={item.end}>
+                {item.label}
+              </NavLink>
+            ))}
             <div className="flex">
               <a className="btn btn-alt" href="/contact/">
                 Apply for a Speaker Invitation
@@ -41,9 +43,12 @@ export function Footer() {
             </a>
           </div>
           <div className="rxvp-footer-links" aria-label="Footer">
-            <a href="/">Home</a>
-            <a href="/public-speaking/">Public Speaking</a>
-            <a href="/contact/">Speaker Invitation</a>
+            {PRIMARY_NAV_ITEMS.map((item) => (
+              <NavLink key={item.to} to={item.to} end={item.end}>
+                {item.label}
+              </NavLink>
+            ))}
+            <NavLink to="/contact/">Speaker Invitation</NavLink>
           </div>
         </div>
         <div className="text-gray-300 font-Secondary text-lg w-full pt-4 mt-4 border-t border-solid border-gray-300 rxvp-footer-bottom">

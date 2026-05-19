@@ -372,6 +372,31 @@ a {
   width: 6.25rem;
 }
 
+.rxvp-apac-section--leadership .rxvp-apac-split {
+  grid-template-columns: minmax(20rem, 0.95fr) minmax(0, 1.25fr);
+  margin: 1.5rem 0 2rem;
+}
+
+.rxvp-apac-section--leadership .rxvp-apac-card--highlight {
+  align-items: stretch;
+  padding: clamp(1.4rem, 3vw, 2rem);
+}
+
+.rxvp-apac-section--leadership .rxvp-apac-person {
+  gap: 1.25rem;
+  grid-template-columns: minmax(8.5rem, 11rem) minmax(0, 1fr);
+}
+
+.rxvp-apac-section--leadership .rxvp-apac-person img {
+  border-width: 4px;
+  height: clamp(8.5rem, 16vw, 11rem);
+  width: clamp(8.5rem, 16vw, 11rem);
+}
+
+.rxvp-apac-section--leadership .rxvp-apac-name {
+  font-size: clamp(1.7rem, 3vw, 2.1rem) !important;
+}
+
 .rxvp-apac-name {
   color: #ffffff !important;
   font-family: Abel, "Libre Baskerville", sans-serif !important;
@@ -422,6 +447,10 @@ a {
   color: #f6d27a;
 }
 
+.rxvp-footer-links a[aria-current="page"] {
+  color: #f6d27a;
+}
+
 .rxvp-footer-bottom {
   align-items: center;
   display: flex;
@@ -434,6 +463,96 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 1.25rem;
+}
+
+.events-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 24rem));
+}
+
+.event-card {
+  background: #fff;
+  border: 1px solid var(--rxvp-line);
+  border-radius: 8px;
+  box-shadow: var(--rxvp-soft-shadow);
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-decoration: none;
+  transition:
+    transform 160ms ease,
+    box-shadow 160ms ease,
+    border-color 160ms ease;
+}
+
+.event-card:hover,
+.event-card:focus-visible {
+  border-color: rgba(178, 0, 154, 0.22);
+  box-shadow: 0 26px 48px rgba(18, 24, 33, 0.16);
+  outline: none;
+  transform: translateY(-2px);
+}
+
+.event-card-media {
+  aspect-ratio: 16 / 10;
+  background: linear-gradient(135deg, #3c0446, #8a145b 60%, #d1a73d);
+}
+
+.event-card-media img {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.event-card-body {
+  display: grid;
+  gap: 0.85rem;
+  padding: 1.4rem;
+}
+
+.event-card-kicker {
+  color: #b2009a;
+  font-family: Abel, "Libre Baskerville", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.event-card-title {
+  color: #171a1f;
+  font-family: Abel, "Libre Baskerville", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+  line-height: 0.95;
+  margin: 0;
+}
+
+.event-card-meta {
+  color: var(--rxvp-muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Libre Baskerville", Abel, sans-serif;
+  font-size: 0.95rem;
+  gap: 0.4rem 1rem;
+}
+
+.event-card-summary {
+  color: #333b48;
+  font-family: "Libre Baskerville", Abel, sans-serif;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.event-card-cta {
+  color: #0e5c86;
+  font-family: Abel, "Libre Baskerville", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .contact-kicker {
