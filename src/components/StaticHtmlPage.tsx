@@ -74,6 +74,10 @@ function buildLeadershipMarkup(documentFragment: Document, sections: Element[]) 
   const apacSection = sections[9]?.cloneNode(true) as HTMLElement | undefined;
   const foundersSection = sections[7]?.cloneNode(true);
 
+  if (foundersSection) {
+    wrapper.appendChild(foundersSection);
+  }
+
   if (apacSection) {
     apacSection.classList.add("rxvp-apac-section--leadership");
 
@@ -108,10 +112,6 @@ function buildLeadershipMarkup(documentFragment: Document, sections: Element[]) 
     }
 
     wrapper.appendChild(apacSection);
-  }
-
-  if (foundersSection) {
-    wrapper.appendChild(foundersSection);
   }
 
   return wrapper.innerHTML;

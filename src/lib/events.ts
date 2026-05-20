@@ -5,7 +5,7 @@ export const EVENTS = [
     path: "/events/international-womens-day/",
     dateLabel: "March 4 - 6, 2026",
     status: "Event Concluded",
-    kicker: "Featured Event",
+    kicker: "6000 seats sold",
     image: "/assets/iwd-hero.png",
     summary:
       "A global collection of senior leaders across five continents, bringing life sciences leadership into one shared conversation.",

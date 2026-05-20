@@ -109,7 +109,7 @@ export default function PublicSpeaking() {
             <aside className="public-speaking-card">
               <p className="public-speaking-label">Core advantages</p>
               <ul>
-                <li>Speaking practice in 3 panels</li>
+                <li>Live speaking practice on three separate panels</li>
                 <li>Practitioner speaking coaches who know the life sciences stage</li>
               </ul>
             </aside>
@@ -177,7 +177,12 @@ export default function PublicSpeaking() {
               <div className="public-speaking-coach-grid">
                 <article>
                   <h3>Deepa Desai</h3>
-                  <p>Customized short bio to be added when provided by RXvP.</p>
+                  <p>
+                    Dr. Deepa Desai is a globally recognized healthcare executive, public speaker, leadership strategist, and executive presence advisor with more than 20 years of experience leading transformation across the life sciences sector. She serves as Founder and CEO of D Cube Consultancy, Head of Asia Pacific for RxVP, Global Board Director at the Healthcare Businesswomen's Association, and has held numerous VP roles in major corporations. Through these leadership roles, she helps emerging leaders strengthen executive presence, elevate strategic communication, and speak with confidence, credibility, and influence.
+                  </p>
+                  <p>
+                    Deepa is a frequent speaker at life sciences conferences and leadership forums across the United States and Europe. She has also expanded the Healthcare Businesswomen’s Association in India to a growing community of 700 members by building panels, summits, and chapters across the country.
+                  </p>
                 </article>
                 <article>
                   <h3>Bonnie Lappin</h3>
