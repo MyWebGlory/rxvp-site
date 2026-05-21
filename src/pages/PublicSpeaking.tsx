@@ -4,7 +4,7 @@ import SEO, { breadcrumbSchema } from "@/components/SEO";
 import { Footer, Header } from "@/components/SiteChrome";
 
 const publicSpeakingDescription =
-  "AMPLIFY is RxVP's public speaking and executive presence program for life sciences leaders preparing for panels, fireside chats, and high-visibility engagements.";
+  "AMPLIFY is RxVP's premium development experience designed to help emerging senior leaders strengthen public speaking and executive presence.";
 
 const publicSpeakingSchema = {
   "@context": "https://schema.org",
@@ -67,10 +67,11 @@ export default function PublicSpeaking() {
               <div className="overlay absolute w-full h-full bg-black opacity-50 z-10"></div>
               <div className="lg:hidden container relative">
                 <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-48 ml-10 md:pt-40 pb-20">
+                  <p className="public-speaking-tagline">The first and only speaker's bureau in life sciences</p>
                   <p className="public-speaking-kicker">Proudly presents</p>
                   <h1 className="font-Primary text-white">AMPLIFY</h1>
                   <p className="mt-4 text-xl font-Secondary text-white">
-                    Executive presence and high-impact public speaking for life sciences leaders
+                    Training Life Sciences leaders for high impact public speaking
                   </p>
                 </div>
               </div>
@@ -82,10 +83,11 @@ export default function PublicSpeaking() {
 
           <div className="hidden lg:block container relative">
             <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-40 public-speaking-hero-copy">
+              <p className="public-speaking-tagline">The first and only speaker's bureau in life sciences</p>
               <p className="public-speaking-kicker">Proudly presents</p>
               <h1 className="font-Primary text-white">AMPLIFY</h1>
               <p className="mt-4 text-xl font-Secondary text-white">
-                Executive presence and high-impact public speaking for life sciences leaders
+                Training Life Sciences leaders for high impact public speaking
               </p>
             </div>
           </div>
@@ -101,15 +103,14 @@ export default function PublicSpeaking() {
                 Elevating the next generation of enterprise leaders at {companyLocation}.
               </h2>
               <p className="font-Secondary text-dark">
-                As leaders step into broader enterprise influence, the ability to communicate with confidence, clarity,
-                and authority becomes a defining advantage. AMPLIFY is a premium development experience designed to help
-                emerging senior leaders strengthen public speaking and executive presence.
+                AMPLIFY is a premium development experience designed to help emerging senior leaders strengthen public
+                speaking and executive presence.
               </p>
             </div>
             <aside className="public-speaking-card">
               <p className="public-speaking-label">Core advantages</p>
               <ul>
-                <li>Live speaking practice on three separate panels</li>
+                <li>Speaking practice on 3 different panel events</li>
                 <li>Practitioner speaking coaches who know the life sciences stage</li>
               </ul>
             </aside>
@@ -120,12 +121,8 @@ export default function PublicSpeaking() {
           <div className="container">
             <div className="public-speaking-columns">
               <article>
-                <p className="public-speaking-label">Real-world speaking opportunities</p>
-                <h2 className="font-Primary text-dark">Built for visible, high-value forums</h2>
-                <p className="font-Secondary text-dark">
-                  Each participant receives three high-value speaking opportunities over six months. Experiences may be
-                  virtual or in person and designed for internal or external audiences.
-                </p>
+                <p className="public-speaking-label">Real-World Speaking Opportunities</p>
+                <h2 className="font-Primary text-dark">Real-World Speaking Opportunities</h2>
                 <ul className="public-speaking-pills">
                   <li>RxVP panels</li>
                   <li>RxVP fireside chats</li>
@@ -133,10 +130,14 @@ export default function PublicSpeaking() {
                   <li>Industry conferences</li>
                   <li>RxVP/ERG collaborations</li>
                 </ul>
+                <p className="font-Secondary text-dark">
+                  Each participant receives three high-value speaking opportunities over six months. Experiences may be
+                  virtual or in person and designed for internal or external audiences.
+                </p>
               </article>
               <article>
-                <p className="public-speaking-label">Practitioner-led coaching</p>
-                <h2 className="font-Primary text-dark">Coaching from experienced life sciences voices</h2>
+                <p className="public-speaking-label">Practitioner-Led Coaching</p>
+                <h2 className="font-Primary text-dark">Practitioner-Led Coaching</h2>
                 <p className="font-Secondary text-dark">
                   RxVP speaker coaches are accomplished, active voices in the life sciences industry who bring firsthand
                   credibility, insight, and candid feedback to every session.
@@ -162,17 +163,35 @@ export default function PublicSpeaking() {
                 </ul>
               </article>
               <article>
-                <p className="public-speaking-label">Signature development areas</p>
-                <h3>Executive Presence Mastery</h3>
-                <p>Participants strengthen the core qualities that help leaders command attention, build trust, and inspire confidence.</p>
-                <h3>Strategic Public Speaking Excellence</h3>
-                <p>Focused coaching helps participants turn ideas into compelling messages that resonate and move audiences to action.</p>
-                <h3>Panel and Fireside Chat Readiness</h3>
-                <p>Participants gain practical tools to show up with poise, insight, and agility in high-visibility speaking moments.</p>
+                <p className="public-speaking-label">Delivery Skills</p>
+                <ul className="public-speaking-list">
+                  <li>Speaker delivery</li>
+                  <li>Concise storytelling</li>
+                  <li>Audience engagement</li>
+                  <li>Mastering Q&amp;A</li>
+                  <li>Appropriate self-effacing humor</li>
+                  <li>Engagement with panelists, moderators, and interviewers</li>
+                  <li>Enhanced executive presence</li>
+                </ul>
               </article>
             </div>
 
+            <section className="public-speaking-card public-speaking-custom">
+              <p className="public-speaking-label">Program design can be customized based on:</p>
+              <ul className="public-speaking-list">
+                <li>Cohort size</li>
+                <li>Audience composition and geography</li>
+                <li>Strategic panel themes</li>
+                <li>Number and cadence of speaking opportunities</li>
+                <li>Defined success metrics and developmental outcomes</li>
+              </ul>
+            </section>
+
             <section className="public-speaking-coaches">
+              <p className="public-speaking-detail-lead">
+                Participants leave the program better prepared to communicate with executive-level confidence, represent
+                the organization with thought leadership impact, and navigate high-visibility forums with agility.
+              </p>
               <p className="public-speaking-label">Our Practitioner Coaches</p>
               <div className="public-speaking-coach-grid">
                 <article>
@@ -189,7 +208,14 @@ export default function PublicSpeaking() {
                   <p>
                     Bonnie Lappin co-founded the Ambassador Program for the Healthcare Businesswomen's Association in
                     2013. Designed as a global leadership development program for HBA corporate partners, it grew under
-                    her leadership from 2013 to 2025 into a signature experience for more than 11,000 participants.
+                    her leadership from 2013 to 2025 into a signature, often life-changing experience for more than
+                    11,000 participants.
+                  </p>
+                  <p>
+                    Over those 12 years, Bonnie spoke frequently at life sciences companies across Austria, Belgium,
+                    Canada, France, Germany, India, Ireland, Italy, Japan, Malaysia, Singapore, Spain, Switzerland, and
+                    the United Kingdom. She also led panel development, launch and graduation events, and coached
+                    hundreds of panelists and moderators.
                   </p>
                   <p>
                     Today, Bonnie continues this work through RxVP, a global speakers bureau that curates panels for
