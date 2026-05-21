@@ -16,6 +16,7 @@ const routes = [
   "/events/",
   "/events/international-womens-day/",
   "/press-release/",
+  "/press-release/rxvp-sets-global-benchmark-with-record-breaking-international-womens-day-event-across-five-continents/",
   "/about/",
   "/leadership/",
   "/public-speaking/",

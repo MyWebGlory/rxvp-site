@@ -216,6 +216,10 @@ export default function PublicSpeaking() {
                     11,000 participants.
                   </p>
                   <p>
+                    Her leadership impact spans globally, having spoken on leadership and career development in the U.S., Switzerland, India, Malaysia, Japan, France, UK, Germany, Singapore, and Ireland.
+                    Bonnie has mentored hundreds of professionals worldwide and is internationally recognized for advancing leadership in the life sciences industry. She was awarded the PharmaVOICE 100 Award in 2017 and is the sole recipient of the HBA Visionary Leader Award.
+                  </p>
+                  <p>
                     Over those 12 years, Bonnie spoke frequently at life sciences companies across Austria, Belgium,
                     Canada, France, Germany, India, Ireland, Italy, Japan, Malaysia, Singapore, Spain, Switzerland, and
                     the United Kingdom. She also led panel development, launch and graduation events, and coached

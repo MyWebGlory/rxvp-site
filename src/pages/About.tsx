@@ -54,7 +54,6 @@ export default function About() {
           <div className="container">
             <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
               <div className="lg:w-1/2">
-                <p className="rxvp-section-kicker rxvp-section-kicker--light">Membership standard</p>
                 <h2 className="text-6xl text-white font-Primary mb-4">Why Join RxVP?</h2>
                 <p className="text-lg text-white font-Secondary">Who you are:</p>
                 <ul className="text-white my-10 font-Secondary max-w-[450px]">

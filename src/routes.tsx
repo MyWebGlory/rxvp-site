@@ -7,6 +7,7 @@ import Leadership from "@/pages/Leadership";
 import NotFound from "@/pages/NotFound";
 import Panels from "@/pages/Panels";
 import PressRelease from "@/pages/PressRelease";
+import PressReleaseInternationalWomensDay from "@/pages/PressReleaseInternationalWomensDay";
 import PublicSpeaking from "@/pages/PublicSpeaking";
 import Speakers from "@/pages/Speakers";
 
@@ -20,6 +21,14 @@ export const routes = [
   { path: "/events/international-womens-day/", element: <EventInternationalWomensDay /> },
   { path: "/press-release", element: <PressRelease /> },
   { path: "/press-release/", element: <PressRelease /> },
+  {
+    path: "/press-release/rxvp-sets-global-benchmark-with-record-breaking-international-womens-day-event-across-five-continents",
+    element: <PressReleaseInternationalWomensDay />,
+  },
+  {
+    path: "/press-release/rxvp-sets-global-benchmark-with-record-breaking-international-womens-day-event-across-five-continents/",
+    element: <PressReleaseInternationalWomensDay />,
+  },
   { path: "/about", element: <About /> },
   { path: "/about/", element: <About /> },
   { path: "/leadership", element: <Leadership /> },

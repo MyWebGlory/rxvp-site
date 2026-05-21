@@ -1,5 +1,7 @@
 import SEO, { breadcrumbSchema } from "@/components/SEO";
 import { Footer, Header } from "@/components/SiteChrome";
+import { PRESS_RELEASES } from "@/lib/pressReleases";
+import { Link } from "react-router-dom";
 
 const pressReleaseDescription = "In the News: press releases and media coverage for RxVP.";
 
@@ -40,17 +42,31 @@ export default function PressRelease() {
             <p className="rxvp-section-kicker rxvp-section-kicker--light">Press Release</p>
             <h1 className="text-6xl text-white font-Primary mb-4">In the News</h1>
             <p className="font-Secondary text-lg text-white max-w-2xl">
-              World record article and future press coverage will be published here.
+              Press releases, announcements, and media coverage from RxVP.
             </p>
           </div>
         </section>
 
         <section className="section-full py-12 lg:py-16 bg-white">
           <div className="container">
-            <div className="rounded-md border border-gray-200 bg-gray-50 px-6 py-10 min-h-[240px]">
-              <h2 className="text-2xl lg:text-3xl font-Primary mb-3">Ready Space</h2>
-              <p className="font-Secondary text-base text-gray-700">
-              </p>
+            <div className="press-release-list">
+              {PRESS_RELEASES.map((release) => (
+                <Link key={release.slug} to={`/press-release/${release.slug}/`} className="event-card press-release-card">
+                  <div className="event-card-media press-release-card__media">
+                    <img src={release.image} alt="RxVP logo" loading="lazy" decoding="async" />
+                  </div>
+                  <div className="event-card-body">
+                    <p className="event-card-kicker">{release.category}</p>
+                    <h2 className="event-card-title press-release-card__title">{release.title}</h2>
+                    <div className="event-card-meta">
+                      <span>{release.sourceName}</span>
+                      <span>{release.displayDate}</span>
+                    </div>
+                    <p className="event-card-summary press-release-card__excerpt">{release.excerpt}</p>
+                    <span className="event-card-cta">Read press release</span>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </section>

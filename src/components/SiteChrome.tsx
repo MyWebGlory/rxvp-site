@@ -42,14 +42,6 @@ export function Footer() {
               <img src="/assets/RxVP-logo.svg" alt="RxVP RXVP Logo" width="276" height="160" decoding="async" />
             </a>
           </div>
-          <div className="rxvp-footer-links" aria-label="Footer">
-            {PRIMARY_NAV_ITEMS.map((item) => (
-              <NavLink key={item.to} to={item.to} end={item.end}>
-                {item.label}
-              </NavLink>
-            ))}
-            <NavLink to="/contact/">Contact Us</NavLink>
-          </div>
         </div>
         <div className="text-gray-300 font-Secondary text-lg w-full pt-4 mt-4 border-t border-solid border-gray-300 rxvp-footer-bottom">
           <p>© 2026 RxVP. All rights reserved.</p>
