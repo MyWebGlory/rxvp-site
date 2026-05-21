@@ -8,7 +8,7 @@ export function Header() {
         <div className="flex">
           <a href="/" className="max-w-32 sm:max-w-36 xl:max-w-[150px]">
             <span className="sr-only">Home</span>
-            <img src="/assets/RxVP-logo.svg" alt="RXvP RXVP Logo" width="276" height="160" decoding="async" />
+            <img src="/assets/RxVP-logo.svg" alt="RxVP RXVP Logo" width="276" height="160" decoding="async" />
           </a>
         </div>
 
@@ -39,7 +39,7 @@ export function Footer() {
           <div className="flex">
             <a href="/" className="max-w-32 sm:max-w-36 xl:max-w-[200px]">
               <span className="sr-only">Home</span>
-              <img src="/assets/RxVP-logo.svg" alt="RXvP RXVP Logo" width="276" height="160" decoding="async" />
+              <img src="/assets/RxVP-logo.svg" alt="RxVP RXVP Logo" width="276" height="160" decoding="async" />
             </a>
           </div>
           <div className="rxvp-footer-links" aria-label="Footer">
@@ -48,18 +48,11 @@ export function Footer() {
                 {item.label}
               </NavLink>
             ))}
-            <NavLink to="/contact/">Speaker Invitation</NavLink>
+            <NavLink to="/contact/">Contact Us</NavLink>
           </div>
         </div>
         <div className="text-gray-300 font-Secondary text-lg w-full pt-4 mt-4 border-t border-solid border-gray-300 rxvp-footer-bottom">
-          <p>© 2025 RxVP. All rights reserved.</p>
-          <div className="footer-contact">
-            {CONTACTS.map((contact) => (
-              <a key={contact.email} href={`mailto:${contact.email}`}>
-                {contact.email}
-              </a>
-            ))}
-          </div>
+          <p>© 2026 RxVP. All rights reserved.</p>
         </div>
       </div>
     </footer>

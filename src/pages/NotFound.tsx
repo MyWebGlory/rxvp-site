@@ -5,8 +5,8 @@ export default function NotFound() {
   return (
     <div className="page-template-contact">
       <SEO
-        title="404 - Page not found | RXvP"
-        description="The requested RXvP page could not be found."
+        title="404 - Page not found | RxVP"
+        description="The requested RxVP page could not be found."
         canonicalPath="/404/"
         noIndex
       />
@@ -17,7 +17,7 @@ export default function NotFound() {
             <h1 className="font-Primary text-6xl text-dark mb-6">Page not found</h1>
             <p className="font-Secondary text-lg text-dark mb-8">The page you requested is not available.</p>
             <a className="btn btn-alt inline-block" href="/">
-              Return to RXvP
+              Return to RxVP
             </a>
           </div>
         </section>

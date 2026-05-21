@@ -1,10 +1,10 @@
 export const SITE_URL = "https://rxvp.org";
-export const SITE_NAME = "RXvP";
+export const SITE_NAME = "RxVP";
 export const CONTACT_EMAIL = "bonnie@rxvp.org";
 export const PRIMARY_NAV_ITEMS = [
   { label: "Home", to: "/", end: true },
   { label: "Speakers", to: "/speakers/", end: false },
-  { label: "Events", to: "/events/", end: false },
+  { label: "In the News", to: "/press-release/", end: false },
   { label: "About", to: "/about/", end: false },
   { label: "Leadership", to: "/leadership/", end: false },
   { label: "Public Speaking", to: "/public-speaking/", end: false },
@@ -24,5 +24,5 @@ export const CONTACTS = [
   },
 ] as const;
 export const DEFAULT_DESCRIPTION =
-  "Join RXvP, the invitation-only global speakers bureau for life science leaders, curated speaking engagements, and executive leadership conversations.";
+  "Join RxVP, the invitation-only global speakers bureau for life science leaders, curated speaking engagements, and executive leadership conversations.";
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/assets/cropped-archivehero-scaled-1.webp`;

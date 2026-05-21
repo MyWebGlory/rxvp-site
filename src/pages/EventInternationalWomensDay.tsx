@@ -4,7 +4,7 @@ import { Footer, Header } from "@/components/SiteChrome";
 import { INTERNATIONAL_WOMENS_DAY_EVENT } from "@/lib/events";
 
 const eventDescription =
-  "Explore RXvP's International Women's Day event, a global leadership conversation bringing together senior life sciences leaders across five continents.";
+  "Explore RxVP's International Women's Day event, a global leadership conversation bringing together senior life sciences leaders across five continents.";
 
 const eventPageSchema = {
   "@context": "https://schema.org",
@@ -30,7 +30,7 @@ export default function EventInternationalWomensDay() {
         structuredData={[
           eventPageSchema,
           breadcrumbSchema([
-            { name: "RXvP", path: "/" },
+            { name: "RxVP", path: "/" },
             { name: "Events", path: "/events/" },
             { name: INTERNATIONAL_WOMENS_DAY_EVENT.title, path: INTERNATIONAL_WOMENS_DAY_EVENT.path },
           ]),

@@ -4,7 +4,7 @@ import SEO, { breadcrumbSchema } from "@/components/SEO";
 import { Footer, Header } from "@/components/SiteChrome";
 
 const publicSpeakingDescription =
-  "AMPLIFY is RXvP's public speaking and executive presence program for life sciences leaders preparing for panels, fireside chats, and high-visibility engagements.";
+  "AMPLIFY is RxVP's public speaking and executive presence program for life sciences leaders preparing for panels, fireside chats, and high-visibility engagements.";
 
 const publicSpeakingSchema = {
   "@context": "https://schema.org",
@@ -40,7 +40,7 @@ export default function PublicSpeaking() {
         structuredData={[
           publicSpeakingSchema,
           breadcrumbSchema([
-            { name: "RXvP", path: "/" },
+            { name: "RxVP", path: "/" },
             { name: "Public Speaking", path: "/public-speaking/" },
           ]),
         ]}
@@ -127,18 +127,18 @@ export default function PublicSpeaking() {
                   virtual or in person and designed for internal or external audiences.
                 </p>
                 <ul className="public-speaking-pills">
-                  <li>RXvP panels</li>
-                  <li>RXvP fireside chats</li>
+                  <li>RxVP panels</li>
+                  <li>RxVP fireside chats</li>
                   <li>Strategic stakeholder engagements</li>
                   <li>Industry conferences</li>
-                  <li>RXvP/ERG collaborations</li>
+                  <li>RxVP/ERG collaborations</li>
                 </ul>
               </article>
               <article>
                 <p className="public-speaking-label">Practitioner-led coaching</p>
                 <h2 className="font-Primary text-dark">Coaching from experienced life sciences voices</h2>
                 <p className="font-Secondary text-dark">
-                  RXvP speaker coaches are accomplished, active voices in the life sciences industry who bring firsthand
+                  RxVP speaker coaches are accomplished, active voices in the life sciences industry who bring firsthand
                   credibility, insight, and candid feedback to every session.
                 </p>
                 <ul className="public-speaking-list">
@@ -192,7 +192,7 @@ export default function PublicSpeaking() {
                     her leadership from 2013 to 2025 into a signature experience for more than 11,000 participants.
                   </p>
                   <p>
-                    Today, Bonnie continues this work through RXvP, a global speakers bureau that curates panels for
+                    Today, Bonnie continues this work through RxVP, a global speakers bureau that curates panels for
                     experienced and emerging speakers.
                   </p>
                 </article>

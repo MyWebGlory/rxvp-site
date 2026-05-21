@@ -3,14 +3,14 @@ import StaticHtmlPage from "@/components/StaticHtmlPage";
 import { Footer, Header } from "@/components/SiteChrome";
 
 const speakersDescription =
-  "Browse RXvP speakers and explore curated speaking opportunities for senior life sciences leaders across global markets.";
+  "Browse RxVP speakers and explore curated speaking opportunities for senior life sciences leaders across global markets.";
 
 const speakersPageSchema = {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "@id": "https://rxvp.org/speakers/",
   url: "https://rxvp.org/speakers/",
-  name: "RXvP Speakers",
+  name: "RxVP Speakers",
   description: speakersDescription,
   inLanguage: "en-US",
 };
@@ -19,13 +19,13 @@ export default function Speakers() {
   return (
     <div className="page-template-speakers">
       <SEO
-        title="RXvP Speakers"
+        title="RxVP Speakers"
         description={speakersDescription}
         canonicalPath="/speakers/"
         structuredData={[
           speakersPageSchema,
           breadcrumbSchema([
-            { name: "RXvP", path: "/" },
+            { name: "RxVP", path: "/" },
             { name: "Speakers", path: "/speakers/" },
           ]),
         ]}
@@ -36,7 +36,7 @@ export default function Speakers() {
       </a>
       <Header />
       <main id="main_content" className="main-content-wrap">
-        <h1 className="sr-only">RXvP Speakers and Opportunities</h1>
+        <h1 className="sr-only">RxVP Speakers and Opportunities</h1>
         <StaticHtmlPage contentUrl="/content/home.html" containerId="legacy-speakers-content" sectionKey="speakers" />
       </main>
       <Footer />

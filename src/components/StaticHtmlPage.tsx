@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export type LegacySectionKey = "home" | "speakers" | "events" | "event-international-womens-day" | "about" | "leadership";
+export type LegacySectionKey = "home" | "speakers" | "events" | "event-international-womens-day" | "leadership";
 
 interface StaticHtmlPageProps {
   contentUrl: string;
@@ -144,9 +144,6 @@ function extractMarkup(html: string, sectionKey?: LegacySectionKey) {
     case "event-international-womens-day":
       appendSectionClones(wrapper, sections, [3]);
       return wrapper.innerHTML;
-    case "about":
-      appendSectionClones(wrapper, sections, [6, 4]);
-      return wrapper.innerHTML;
     case "leadership":
       return buildLeadershipMarkup(parsedDocument, sections);
     default:
@@ -189,7 +186,7 @@ export default function StaticHtmlPage({ contentUrl, containerId, sectionKey }: 
       <main className="main-content-wrap">
         <section className="bg-white py-16">
           <div className="container">
-            <h1 className="font-Primary text-6xl text-dark">RXvP</h1>
+            <h1 className="font-Primary text-6xl text-dark">RxVP</h1>
             <p className="font-Secondary text-lg text-dark">
               The site content could not be loaded. Please refresh the page.
             </p>

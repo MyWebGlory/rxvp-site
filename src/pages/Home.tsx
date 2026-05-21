@@ -8,7 +8,7 @@ const homePageSchema = {
   "@type": "WebPage",
   "@id": "https://rxvp.org/",
   url: "https://rxvp.org/",
-  name: "RXvP | Exclusive Global Speakers Bureau",
+  name: "RxVP | Exclusive Global Speakers Bureau",
   description: DEFAULT_DESCRIPTION,
   inLanguage: "en-US",
 };
@@ -17,10 +17,10 @@ export default function Home() {
   return (
     <>
       <SEO
-        title="RXvP | Exclusive Global Speakers Bureau"
+        title="RxVP | Exclusive Global Speakers Bureau"
         description={DEFAULT_DESCRIPTION}
         canonicalPath="/"
-        structuredData={[homePageSchema, breadcrumbSchema([{ name: "RXvP", path: "/" }])]}
+        structuredData={[homePageSchema, breadcrumbSchema([{ name: "RxVP", path: "/" }])]}
       />
       <div id="banner"></div>
       <a href="#main_content" className="sr-only">
@@ -28,7 +28,7 @@ export default function Home() {
       </a>
       <Header />
       <main id="main_content" className="main-content-wrap">
-        <h1 className="sr-only">RXvP | Exclusive Global Speakers Bureau for Life Science Executives</h1>
+        <h1 className="sr-only">RxVP | Exclusive Global Speakers Bureau for Life Science Executives</h1>
         <StaticHtmlPage contentUrl="/content/home.html" containerId="legacy-home-content" sectionKey="home" />
       </main>
       <Footer />

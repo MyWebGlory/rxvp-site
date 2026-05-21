@@ -3,7 +3,7 @@ import { Footer, Header } from "@/components/SiteChrome";
 import { CONTACTS } from "@/lib/site";
 
 const contactDescription =
-  "Contact Bonnie Lappin or Suzette DiMascio at RXvP to learn about membership, speaking opportunities, and partnerships in the global life science community.";
+  "Contact Bonnie Lappin or Suzette DiMascio at RxVP to learn about membership, speaking opportunities, and partnerships in the global life science community.";
 
 const contactSchema = {
   "@context": "https://schema.org",
@@ -15,14 +15,14 @@ const contactSchema = {
   inLanguage: "en-US",
 };
 
-const emailSubject = encodeURIComponent("RXvP Speaker Invitation Application");
+const emailSubject = encodeURIComponent("RxVP Speaker Invitation Application");
 
 function emailBody(name: string) {
   return encodeURIComponent(
     [
       `Hello ${name.split(" ")[0]},`,
       "",
-      "I would like to apply for a speaker invitation with RXvP.",
+      "I would like to apply for a speaker invitation with RxVP.",
       "",
       "Name:",
       "Title:",
@@ -44,7 +44,7 @@ export default function Contact() {
         structuredData={[
           contactSchema,
           breadcrumbSchema([
-            { name: "RXvP", path: "/" },
+            { name: "RxVP", path: "/" },
             { name: "Connect with the Global Life Science Speakers Bureau", path: "/contact/" },
           ]),
         ]}
@@ -73,10 +73,10 @@ export default function Contact() {
                 <p className="contact-kicker">Speaker invitation</p>
                 <h2 className="font-Primary text-4xl text-dark">Apply by email</h2>
                 <p className="font-Secondary text-lg text-dark">
-                  Send your speaker profile details to Bonnie Lappin or Suzette DiMascio. The RXvP team will follow up
+                  Send your speaker profile details to Bonnie Lappin or Suzette DiMascio. The RxVP team will follow up
                   about fit, timing, and upcoming opportunities.
                 </p>
-                <div className="contact-options" aria-label="RXvP contacts">
+                <div className="contact-options" aria-label="RxVP contacts">
                   {CONTACTS.map((contact) => (
                     <article className="contact-person-card" key={contact.email}>
                       <img src={contact.image} alt={contact.name} width="160" height="160" loading="lazy" decoding="async" />
@@ -109,7 +109,7 @@ export default function Contact() {
                     Bureau platform and considered for upcoming events.
                   </p>
                   <p className="mb-8">
-                    Beta phase will be Fall, 2025.
+                    Beta phase will be Fall, 2026.
                     <br />
                     1-2 speaking engagements per person.
                   </p>

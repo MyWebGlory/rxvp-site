@@ -1,10 +1,10 @@
 # Copilot Instructions
 
-This repository is the static Vite/React rebuild of RXvP, migrated from WordPress to GitHub Pages.
+This repository is the static Vite/React rebuild of RxVP, migrated from WordPress to GitHub Pages.
 
 ## Project Goals
 
-- Preserve the public RXvP website content and visual presentation from the WordPress export.
+- Preserve the public RxVP website content and visual presentation from the WordPress export.
 - Keep the site static and GitHub Pages compatible: no WordPress, PHP, Gravity Forms, server actions, or backend API requirements.
 - Maintain SEO parity or better: unique titles, descriptions, canonical URLs, Open Graph metadata, Twitter metadata, sitemap, robots.txt, and JSON-LD.
 - The contact page must use mailto CTAs to `bonnie@rxvp.org` and `suzette@rxvp.org`; do not reintroduce a server-backed form.
@@ -35,7 +35,7 @@ Important files:
 - Prefer local assets from `public/assets`; do not hotlink WordPress assets unless the asset is intentionally external.
 - Keep contact conversion serverless with `mailto:` links to `bonnie@rxvp.org` and `suzette@rxvp.org`.
 - When adding speaker, founder, or regional leader portraits, name files with the person slug, for example `deepa-desai.jpg`.
-- Preserve RXvP brand colors and typography from the imported WordPress CSS unless there is a clear bug.
+- Preserve RxVP brand colors and typography from the imported WordPress CSS unless there is a clear bug.
 - Run `npm run build` after SEO, route, content, or layout changes.
 
 ## Verification

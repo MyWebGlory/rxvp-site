@@ -36,7 +36,7 @@ const notFoundHtml = `<!doctype html>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>404 - Page not found | RXvP</title>
+    <title>404 - Page not found | RxVP</title>
     <link rel="icon" href="/assets/cropped-RxVP-logo-32x32.webp" sizes="32x32" />
     <link rel="stylesheet" href="/assets/google-fonts-core.css" />
     <link rel="stylesheet" href="/assets/google-fonts-cormorant.css" />
@@ -47,8 +47,8 @@ const notFoundHtml = `<!doctype html>
       <section class="bg-white py-16 lg:py-24">
         <div class="container text-center">
           <h1 class="font-Primary text-6xl text-dark mb-6">404 - Page not found</h1>
-          <p class="font-Secondary text-lg text-dark mb-8">The requested RXvP page could not be found.</p>
-          <a class="btn btn-alt inline-block" href="/">Return to RXvP</a>
+          <p class="font-Secondary text-lg text-dark mb-8">The requested RxVP page could not be found.</p>
+          <a class="btn btn-alt inline-block" href="/">Return to RxVP</a>
         </div>
       </section>
     </main>
