@@ -8,6 +8,7 @@ export const PRIMARY_NAV_ITEMS = [
   { label: "About", to: "/about/", end: false },
   { label: "Leadership", to: "/leadership/", end: false },
   { label: "Public Speaking", to: "/public-speaking/", end: false },
+  { label: "Panels", to: "/panels/", end: false },
 ] as const;
 export const CONTACTS = [
   {

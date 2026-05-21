@@ -5,6 +5,7 @@ import Events from "@/pages/Events";
 import Home from "@/pages/Home";
 import Leadership from "@/pages/Leadership";
 import NotFound from "@/pages/NotFound";
+import Panels from "@/pages/Panels";
 import PressRelease from "@/pages/PressRelease";
 import PublicSpeaking from "@/pages/PublicSpeaking";
 import Speakers from "@/pages/Speakers";
@@ -25,6 +26,8 @@ export const routes = [
   { path: "/leadership/", element: <Leadership /> },
   { path: "/public-speaking", element: <PublicSpeaking /> },
   { path: "/public-speaking/", element: <PublicSpeaking /> },
+  { path: "/panels", element: <Panels /> },
+  { path: "/panels/", element: <Panels /> },
   { path: "/contact", element: <Contact /> },
   { path: "/contact/", element: <Contact /> },
   { path: "*", element: <NotFound /> },

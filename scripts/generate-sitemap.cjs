@@ -11,6 +11,7 @@ const routes = [
   "/about/",
   "/leadership/",
   "/public-speaking/",
+  "/panels/",
   "/contact/",
 ];
 const today = new Date().toISOString().slice(0, 10);

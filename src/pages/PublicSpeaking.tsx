@@ -94,6 +94,10 @@ export default function PublicSpeaking() {
 
           <img src="/assets/Mic.webp" alt="Microphone" className="absolute left-1 lg:left-3 xl:left-6 bottom-[450px] lg:bottom-0 w-20 md:w-24 lg:w-32 z-20" />
           <img src="/assets/Woman.webp" alt="Speaker" className="absolute bottom-0 left-1/2 transform -translate-x-1/2 z-20 hidden lg:block h-[85%]" />
+          <svg className="panels-wave hero-wave" viewBox="0 0 1000 130" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M0 64 C180 34 326 76 492 58 C674 38 806 22 1000 70 L1000 130 L0 130 Z" fill="#fffdf8" />
+            <path d="M0 50 C180 20 326 62 492 44 C674 24 806 8 1000 56 L1000 76 C806 28 674 44 492 64 C326 82 180 40 0 70 Z" fill="#c9a532" opacity="0.92" />
+          </svg>
         </section>
 
         <section className="bg-white public-speaking-intro">

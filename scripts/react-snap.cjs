@@ -19,6 +19,7 @@ const routes = [
   "/about/",
   "/leadership/",
   "/public-speaking/",
+  "/panels/",
   "/contact/",
 ];
 
