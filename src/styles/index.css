@@ -818,6 +818,7 @@ a {
   margin: 0 0 1rem;
   font-size: clamp(38px, 6vw, 68px);
   line-height: 1.05;
+    text-align: left;
 }
 
 .public-speaking-grid p,
@@ -1182,6 +1183,7 @@ img[src$="RxVP-logo.svg"] {
   color: rgba(255, 255, 255, 0.9);
   font-size: clamp(1.25rem, 2.6vw, 1.8rem);
   line-height: 1.22;
+    text-align: left;
 }
 
 .home-hero p:last-of-type {
