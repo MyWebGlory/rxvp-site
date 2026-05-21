@@ -10,6 +10,17 @@ const defaultChromePath =
 
 const source = "dist";
 const sourceDir = path.resolve(source);
+const routes = [
+  "/",
+  "/speakers/",
+  "/events/",
+  "/events/international-womens-day/",
+  "/press-release/",
+  "/about/",
+  "/leadership/",
+  "/public-speaking/",
+  "/contact/",
+];
 
 const contentTypes = new Map([
   [".css", "text/css; charset=utf-8"],
@@ -105,7 +116,7 @@ const close = (server) =>
       source,
       port,
       externalServer: true,
-      include: ["/", "/contact/"],
+      include: routes,
       crawl: false,
       inlineCss: false,
       skipThirdPartyRequests: true,

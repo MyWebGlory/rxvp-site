@@ -2,7 +2,17 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const siteUrl = "https://rxvp.org";
-const routes = ["/", "/contact/"];
+const routes = [
+  "/",
+  "/speakers/",
+  "/events/",
+  "/events/international-womens-day/",
+  "/press-release/",
+  "/about/",
+  "/leadership/",
+  "/public-speaking/",
+  "/contact/",
+];
 const today = new Date().toISOString().slice(0, 10);
 
 const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
