@@ -4,7 +4,7 @@ import SEO, { breadcrumbSchema } from "@/components/SEO";
 import { Footer, Header } from "@/components/SiteChrome";
 
 const publicSpeakingDescription =
-  "AMPLIFY is RxVP's premium development experience designed to help emerging senior leaders strengthen public speaking and executive presence.";
+  "IGNITE is a premium, hands-on development experience. Led by seasoned life sciences industry leaders and coaching experts who speak from lived experience, this program moves far beyond theory: It utilizes immersive, gamified workshops, high-stakes live role-play, and challenging coaching to master public speaking and build a definitive professional leadership signature.";
 
 const publicSpeakingSchema = {
   "@context": "https://schema.org",
@@ -69,7 +69,7 @@ export default function PublicSpeaking() {
                 <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-48 ml-10 md:pt-40 pb-20">
                   <p className="public-speaking-tagline">The first and only speaker's bureau in life sciences</p>
                   <p className="public-speaking-kicker">Proudly presents</p>
-                  <h1 className="font-Primary text-white">AMPLIFY</h1>
+                  <h1 className="font-Primary text-white">IGNITE</h1>
                   <p className="mt-4 text-xl font-Secondary text-white">
                     Training Life Sciences leaders for high impact public speaking
                   </p>
@@ -85,7 +85,7 @@ export default function PublicSpeaking() {
             <div className="relative z-20 flex flex-col justify-center h-full text-white max-w-lg pt-40 public-speaking-hero-copy">
               <p className="public-speaking-tagline">The first and only speaker's bureau in life sciences</p>
               <p className="public-speaking-kicker">Proudly presents</p>
-              <h1 className="font-Primary text-white">AMPLIFY</h1>
+              <h1 className="font-Primary text-white">IGNITE</h1>
               <p className="mt-4 text-xl font-Secondary text-white">
                 Training Life Sciences leaders for high impact public speaking
               </p>
@@ -104,11 +104,13 @@ export default function PublicSpeaking() {
           <div className="container public-speaking-grid">
             <div>
               <h2 className="font-Primary text-dark">
-                Elevating the next generation of enterprise leaders at {companyLocation}.
+                Igniting next-in-line talent to excel as enterprise leaders
               </h2>
               <p className="font-Secondary text-dark">
-                AMPLIFY is a premium development experience designed to help emerging senior leaders strengthen public
-                speaking and executive presence.
+                IGNITE is a premium, hands-on development experience. Led by seasoned life sciences industry leaders
+                and coaching experts who speak from lived experience, this program moves far beyond theory: It
+                utilizes immersive, gamified workshops, high-stakes live role-play, and challenging coaching to
+                master public speaking and build a definitive professional leadership signature.
               </p>
             </div>
             <aside className="public-speaking-card">
@@ -143,13 +145,13 @@ export default function PublicSpeaking() {
                 <p className="public-speaking-label">Practitioner-Led Coaching</p>
                 <h2 className="font-Primary text-dark">Practitioner-Led Coaching</h2>
                 <p className="font-Secondary text-dark">
-                  RxVP speaker coaches are accomplished, active voices in the life sciences industry who bring firsthand
-                  credibility, insight, and candid feedback to every session.
+                  RxVP Speaker coaches are active public speakers.
                 </p>
                 <ul className="public-speaking-list">
-                  <li>Speaker delivery and concise storytelling</li>
-                  <li>Audience engagement and executive presence</li>
-                  <li>Panelist, moderator, and interviewer readiness</li>
+                  <li>The Art of the Narrative: Crafting and telling your strategic story with impact</li>
+                  <li>The Art of the Stage: How to engage both virtual and in-person audiences</li>
+                  <li>The Art of the Pivot: Reading the panel flow and seamlessly adjusting</li>
+                  <li>The Art of the Hot Seat: Navigating difficult live questions and delivering interesting answers on the spot.</li>
                 </ul>
               </article>
             </div>

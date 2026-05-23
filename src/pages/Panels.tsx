@@ -2,7 +2,7 @@ import SEO, { breadcrumbSchema } from "@/components/SEO";
 import { Footer, Header } from "@/components/SiteChrome";
 
 const panelsDescription =
-  "Customized RxVP panels for companies that need external life sciences speakers, virtual panels, and senior leadership programming.";
+  "Two RxVP panel offerings: customized panels for your company and the RxVP panel series partnership package.";
 
 const panelsSchema = {
   "@context": "https://schema.org",
@@ -115,13 +115,11 @@ export default function Panels() {
 
         <section className="panels-section panels-custom-intro">
           <div className="container">
+            <p className="panels-label">Offering 01</p>
             <h2>Customized panels for your company</h2>
             <div className="panels-custom-copy">
-              <p>
-                It is often difficult to find external speakers
-                <br />
-                Your budget for speakers is limited
-              </p>
+              <p>It is often difficult to find external speakers</p>
+              <p>Your budget for speakers is limited</p>
               <p>
                 We can help you save time and money. RxVP has an extensive network of speakers globally. All are
                 available virtually and some in-person.
@@ -133,6 +131,8 @@ export default function Panels() {
         <section className="panels-section panels-overview">
           <div className="container panels-intro-grid">
             <div>
+              <p className="panels-label">Offering 02</p>
+              <h2>RxVP Panel Series Partnership Package</h2>
               <p className="panels-lead">
                 Twelve virtual panels, each offered across multiple time zones, designed for employees who want firsthand
                 access to senior life sciences leaders.
