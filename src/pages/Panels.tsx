@@ -34,7 +34,6 @@ const engagementPoints = [
   "Employees gain firsthand exposure to leadership strategies and emerging market dynamics, supporting both individual growth and organizational success.",
   "Each event is designed for live audience engagement through a substantial Q&A segment.",
   "ERG partners can align the program with their goals, budgets, audience needs, and annual calendars.",
-  "Panels provide employees with firsthand insight into leadership journeys and possible career paths.",
 ];
 
 const markets = [
@@ -118,8 +117,8 @@ export default function Panels() {
             <p className="panels-label">Offering 01</p>
             <h2>Customized panels for your company</h2>
             <div className="panels-custom-copy">
-              <p>It is often difficult to find external speakers</p>
-              <p>Your budget for speakers is limited</p>
+              <p>It is often difficult to find external speakers.</p>
+              <p>Your budget for speakers is limited.</p>
               <p>
                 We can help you save time and money. RxVP has an extensive network of speakers globally. All are
                 available virtually and some in-person.
@@ -132,9 +131,10 @@ export default function Panels() {
           <div className="container panels-intro-grid">
             <div>
               <p className="panels-label">Offering 02</p>
-              <h2>RxVP Panel Series Partnership Package</h2>
+              <h2 className="offering-two-title">RxVP Panel Series Partnership Package</h2>
+              
               <p className="panels-lead">
-                Twelve virtual panels, each offered across multiple time zones, designed for employees who want firsthand
+                <span className="panels-lead-first">Twelve virtual panels,</span> each offered across multiple time zones, designed for employees who want firsthand
                 access to senior life sciences leaders.
               </p>
               <p>
@@ -177,7 +177,7 @@ export default function Panels() {
               <p className="panels-label">Series 01</p>
               <h2>Celebration Days</h2>
               <p>
-                Featured observances from September 2026 through June 2027, built for ERG engagement, leadership
+                Seven Featured observances from September 2026 through June 2027, built for ERG engagement, leadership
                 visibility, and cross-functional employee learning.
               </p>
             </article>
@@ -199,7 +199,7 @@ export default function Panels() {
               <div className="panels-celebration-panel">
                 <h2>Celebration Days Series</h2>
                 <p>
-                  Featured observances from September 2026 through June 2027, with senior speakers curated for employee
+                  Seven Featured observances from September 2026 through June 2027, with senior speakers curated for employee
                   resource groups and leadership audiences.
                 </p>
               </div>
