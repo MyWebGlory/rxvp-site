@@ -94,15 +94,14 @@ export default function Panels() {
       </a>
       <Header />
       <main id="main_content" className="main-content-wrap">
-        <section className="panels-hero" aria-label="RxVP panel series package">
-          <div className="panels-hero-gold" aria-hidden="true">
-            <img src="/assets/Gold.webp" alt="" />
-          </div>
-          <div className="panels-hero-crowd" aria-hidden="true">
-            <img src="/assets/Crowd.webp" alt="" />
-          </div>
-          <img className="panels-hero-mic" src="/assets/Mic.webp" alt="" />
-          <img className="panels-hero-person" src="/assets/Woman.webp" alt="RxVP speaker" />
+        <section
+          className="panels-hero"
+          style={{
+            backgroundImage:
+              "linear-gradient(rgba(53, 18, 63, 0.28), rgba(53, 18, 63, 0.28)), url('/assets/rxvp-people-map.jpeg')",
+          }}
+          aria-label="RxVP panel series package"
+        >
           <div className="panels-hero-copy">
             <h1>RxVP Panels</h1>
           </div>

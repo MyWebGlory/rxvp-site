@@ -1177,111 +1177,30 @@ a {
 }
 
 .panels-hero {
-  background: var(--panels-plum);
-  animation: rxvpAmbientShift 16s ease-in-out infinite;
-  background-size: 120% 120%, 120% 120%, auto;
+  align-items: center;
+  background-color: var(--panels-plum);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
   min-height: clamp(660px, 92vh, 820px);
   overflow: hidden;
+  padding: clamp(8rem, 18vh, 12rem) clamp(1.25rem, 7vw, 5.5rem) clamp(7rem, 16vh, 10rem);
   position: relative;
 }
 
 .panels-hero::after {
-  background: linear-gradient(90deg, rgba(53, 18, 63, 0.72) 0%, rgba(53, 18, 63, 0.46) 44%, rgba(53, 18, 63, 0.04) 100%);
+  background: linear-gradient(90deg, rgba(53, 18, 63, 0.24) 0%, rgba(53, 18, 63, 0.12) 48%, rgba(53, 18, 63, 0.04) 100%);
   content: "";
   inset: 0;
   position: absolute;
   z-index: 1;
 }
 
-.panels-hero-gold,
-.panels-hero-crowd {
-  bottom: 0;
-  position: absolute;
-  top: 0;
-}
-
-.panels-hero-gold {
-  left: 0;
-  width: 50%;
-}
-
-.panels-hero-gold::after {
-  background: rgba(0, 0, 0, 0.5);
-  content: "";
-  inset: 0;
-  position: absolute;
-}
-
-.panels-hero-crowd {
-  right: 0;
-  width: 50%;
-}
-
-.panels-hero-gold img,
-.panels-hero-crowd img {
-  display: block;
-  height: 100%;
-  object-fit: cover;
-  width: 100%;
-}
-
-.panels-hero-gold img {
-  object-position: center;
-}
-
-.panels-hero-crowd img {
-  object-position: center;
-}
-
-.panels-hero-mic {
-  animation: rxvpFloat 6.5s ease-in-out infinite reverse;
-  bottom: clamp(2.8rem, 5vw, 5rem);
-  left: clamp(0.5rem, 1.5vw, 1.75rem);
-  position: absolute;
-  width: clamp(5rem, 9vw, 8rem);
-  z-index: 5;
-}
-
-.panels-hero-person {
-  animation: rxvpFloat 7s ease-in-out infinite;
-  bottom: 0;
-  height: min(85%, 42rem);
-  left: 50%;
-  max-width: none;
-  position: absolute;
-  transform: translateX(-50%);
-  z-index: 4;
-}
-
-.panels-brand-bar {
-  background: #3b0648;
-  border-left: 3px solid var(--panels-gold);
-  border-right: 3px solid var(--panels-gold);
-  left: min(44vw, 38rem);
-  padding: 0.55rem 1rem;
-  position: absolute;
-  right: clamp(1rem, 5vw, 4rem);
-  top: clamp(6.5rem, 13vw, 9rem);
-  z-index: 3;
-}
-
-.panels-brand-bar p {
-  color: var(--panels-gold-light);
-  font-family: Abel, Libre Baskerville, sans-serif;
-  font-size: clamp(0.78rem, 1.25vw, 0.98rem);
-  font-weight: 800;
-  letter-spacing: 0.11em;
-  margin: 0;
-  text-align: center;
-  text-transform: uppercase;
-}
-
 .panels-hero-copy {
-  bottom: clamp(6.5rem, 15vh, 9rem);
   color: #fff;
-  left: clamp(1.25rem, 7vw, 5.5rem);
   max-width: min(34rem, 88vw);
-  position: absolute;
+  position: relative;
   text-shadow: 0 5px 22px rgba(0, 0, 0, 0.75), 0 2px 4px rgba(0, 0, 0, 0.82);
   z-index: 3;
 }
@@ -1710,38 +1629,12 @@ a {
 }
 
 @media (max-width: 900px) {
-  .panels-brand-bar {
-    left: 1rem;
-    right: 1rem;
-    top: 8.5rem;
-  }
-
   .panels-hero::after {
-    background: linear-gradient(180deg, rgba(53, 18, 63, 0.88) 0%, rgba(53, 18, 63, 0.66) 62%, rgba(53, 18, 63, 0.22) 100%);
-  }
-
-  .panels-hero-gold,
-  .panels-hero-crowd {
-    width: 100%;
-  }
-
-  .panels-hero-gold {
-    height: 54%;
-  }
-
-  .panels-hero-crowd {
-    bottom: 0;
-    top: 46%;
-  }
-
-  .panels-hero-person {
-    display: none;
+    background: linear-gradient(180deg, rgba(53, 18, 63, 0.42) 0%, rgba(53, 18, 63, 0.24) 62%, rgba(53, 18, 63, 0.08) 100%);
   }
 
   .panels-hero-copy {
-    bottom: 6.25rem;
-    left: 1.25rem;
-    right: 1.25rem;
+    max-width: 100%;
   }
 
   .panels-intro-grid,
@@ -3076,8 +2969,6 @@ p.rxvp-section-kicker {
   .home-hero > img[alt="Speaker"],
   .home-hero > img[alt="Microphone"],
   .panels-hero,
-  .panels-hero-person,
-  .panels-hero-mic,
   .logo-rotator-content,
   .team-block .container > h2,
   .team-block .container > h3,
