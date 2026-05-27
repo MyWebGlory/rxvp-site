@@ -142,14 +142,17 @@ export default function PublicSpeaking() {
               </article>
               <article>
                 <h2 className="font-Primary text-dark">Practitioner-Led Coaching</h2>
-                <p className="font-Secondary text-dark">
+                <p className="font-Secondary text-dark public-speaking-coaching-copy">
                   RxVP Speaker coaches are active public speakers.
                 </p>
-                <ul className="public-speaking-list">
-                  <li>The Art of the Narrative: Crafting and telling your strategic story with impact</li>
-                  <li>The Art of the Stage: How to engage both virtual and in-person audiences</li>
-                  <li>The Art of the Pivot: Reading the panel flow and seamlessly adjusting</li>
-                  <li>The Art of the Hot Seat: Navigating difficult live questions and delivering interesting answers on the spot.</li>
+                <p className="font-Secondary text-dark public-speaking-coaching-copy">
+                  Participants will be coached on:
+                </p>
+                <ul className="public-speaking-list public-speaking-coaching-copy">
+                  <li><strong>The Art of the Narrative:</strong> Crafting and telling your strategic story with impact</li>
+                  <li><strong>The Art of the Stage:</strong> How to engage both virtual and in-person audiences</li>
+                  <li><strong>The Art of the Pivot:</strong> Reading the panel flow and seamlessly adjusting</li>
+                  <li><strong>The Art of the Hot Seat:</strong> Navigating difficult live questions and delivering interesting answers on the spot.</li>
                 </ul>
               </article>
             </div>
