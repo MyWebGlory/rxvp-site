@@ -127,7 +127,6 @@ export default function PublicSpeaking() {
           <div className="container">
             <div className="public-speaking-columns">
               <article>
-                <p className="public-speaking-label">Real-World Speaking Opportunities</p>
                 <h2 className="font-Primary text-dark">Real-World Speaking Opportunities</h2>
                 <ul className="public-speaking-pills">
                   <li>RxVP panels</li>
@@ -142,7 +141,6 @@ export default function PublicSpeaking() {
                 </p>
               </article>
               <article>
-                <p className="public-speaking-label">Practitioner-Led Coaching</p>
                 <h2 className="font-Primary text-dark">Practitioner-Led Coaching</h2>
                 <p className="font-Secondary text-dark">
                   RxVP Speaker coaches are active public speakers.
@@ -201,6 +199,7 @@ export default function PublicSpeaking() {
               <p className="public-speaking-label">Our Practitioner Coaches</p>
               <div className="public-speaking-coach-grid">
                 <article>
+                  <img src="/assets/deepa-desai.jpg" alt="Deepa Desai" className="public-speaking-coach-photo" />
                   <h3>Deepa Desai</h3>
                   <p>
                     Dr. Deepa Desai is a globally recognized healthcare executive, public speaker, leadership strategist, and executive presence advisor with more than 20 years of experience leading transformation across the life sciences sector. She serves as Founder and CEO of D Cube Consultancy, Head of Asia Pacific for RxVP, Global Board Director at the Healthcare Businesswomen's Association, and has held numerous VP roles in major corporations. Through these leadership roles, she helps emerging leaders strengthen executive presence, elevate strategic communication, and speak with confidence, credibility, and influence.
@@ -210,6 +209,7 @@ export default function PublicSpeaking() {
                   </p>
                 </article>
                 <article>
+                  <img src="/assets/bonnie-lappin.webp" alt="Bonnie Lappin" className="public-speaking-coach-photo" />
                   <h3>Bonnie Lappin</h3>
                   <p>
                     Bonnie Lappin co-founded the Ambassador Program for the Healthcare Businesswomen's Association in

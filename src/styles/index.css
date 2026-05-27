@@ -1093,6 +1093,8 @@ a {
   background: #fff;
   padding: .85rem 1rem;
   font-weight: 700;
+    text-align: left;
+    font-size: 18px;
 }
 
 .public-speaking-detail h3,
@@ -1126,6 +1128,16 @@ a {
 
 .public-speaking-coach-grid p {
   margin: 0 0 1rem;
+}
+
+.public-speaking-coach-photo {
+  width: 100%;
+    max-width: 120px;
+    height: 120px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 50%;
+  display: block;
 }
 
 @media (max-width: 900px) {
