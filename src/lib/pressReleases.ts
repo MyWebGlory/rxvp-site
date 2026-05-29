@@ -1,6 +1,6 @@
 export const INTERNATIONAL_WOMENS_DAY_PRESS_RELEASE = {
   slug: "rxvp-sets-global-benchmark-with-record-breaking-international-womens-day-event-across-five-continents",
-  title: "RxVP Sets Global Benchmark with Record-Breaking International Women's Day Event Across Five Continents",
+  title: "RxVP sets Global Benchmark setting a record for an International Women's Day event in Life Sciences across five continents",
   datePublished: "2026-04-01",
   displayDate: "April 1, 2026",
   category: "Press Release",
@@ -8,16 +8,16 @@ export const INTERNATIONAL_WOMENS_DAY_PRESS_RELEASE = {
   sourceName: "openPR",
   sourceUrl: "https://www.openpr.com/news/4449719/rxvp-sets-global-benchmark-with-record-breaking-international",
   excerpt:
-    "RxVP, the invitation-only global leadership collective for Life Sciences, today announced it has set a world record for the largest coordinated International Women's Day leadership event across five global regions.",
+    "RxVP, the invitation only global speaker's bureau for life sciences, today announced it has set a world record for the largest coordinated International Women's Day leadership event across five global regions.",
   heroEyebrow: "Media Release",
   subheading: "Press release from: RxVP",
   sections: [
     {
       heading: "Press release",
       paragraphs: [
-        "RxVP Sets Global Benchmark with Record-Breaking International Women's Day Event Across Five Continents",
-        "RxVP Sets Global Benchmark with Record-Breaking International Women's Day Event Across Five Continents",
-        "RxVP, the invitation-only global leadership collective for Life Sciences, today announced it has set a world record for the largest coordinated International Women's Day leadership event, uniting of participants across five global regions in a single, synchronized virtual experience.",
+        "RxVP sets Global Benchmark setting a record for an International Women's Day event in Life Sciences across five continents",
+        "RxVP sets Global Benchmark setting a record for an International Women's Day event in Life Sciences across five continents",
+        "RxVP, the invitation only global speaker's bureau for life sciences, today announced it has set a world record for the largest coordinated International Women's Day leadership event, uniting of participants across five global regions in a single, synchronized virtual experience.",
         "Spanning the Americas, India, Asia, Europe and Africa, the event brought together an unprecedented network of senior executives, innovators, and change-makers from across the Life Sciences ecosystem. Designed as a rolling global broadcast, the experience seamlessly connected leaders across time zones, creating a continuous wave of insight, inspiration, and shared purpose.",
       ],
     },

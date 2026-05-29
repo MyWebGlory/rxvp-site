@@ -53,14 +53,11 @@ export default function PressRelease() {
               {PRESS_RELEASES.map((release) => (
                 <Link key={release.slug} to={`/press-release/${release.slug}/`} className="event-card press-release-card">
                   <div className="event-card-media press-release-card__media">
-                    <img src={release.image} alt="RxVP logo" loading="lazy" decoding="async" />
+                    <h2 className="event-card-title press-release-card__title">{release.title}</h2>
                   </div>
                   <div className="event-card-body">
-                    <p className="event-card-kicker">{release.category}</p>
-                    <h2 className="event-card-title press-release-card__title">{release.title}</h2>
+                    <p className="event-card-kicker">{release.category} - {release.displayDate}</p>
                     <div className="event-card-meta">
-                      <span>{release.sourceName}</span>
-                      <span>{release.displayDate}</span>
                     </div>
                     <p className="event-card-summary press-release-card__excerpt">{release.excerpt}</p>
                     <span className="event-card-cta">Read press release</span>
