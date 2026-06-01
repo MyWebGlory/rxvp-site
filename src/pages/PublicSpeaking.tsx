@@ -210,6 +210,9 @@ export default function PublicSpeaking() {
                   <p>
                     Deepa is a frequent speaker at life sciences conferences and leadership forums across the United States and Europe. She has also expanded the Healthcare Businesswomen’s Association in India to a growing community of 700 members by building panels, summits, and chapters across the country.
                   </p>
+                  <p>
+                    For more information please contact <a href="mailto:deepa@rxvp.org">deepa@rxvp.org</a>.
+                  </p>
                 </article>
                 <article>
                   <img src="/assets/bonnie-lappin.webp" alt="Bonnie Lappin" className="public-speaking-coach-photo" />
@@ -231,6 +234,9 @@ export default function PublicSpeaking() {
                   <p>
                     Today, Bonnie continues this work through RxVP, a global speakers bureau that curates panels for
                     experienced and emerging speakers.
+                  </p>
+                  <p>
+                    For more information please contact <a href="mailto:bonnie@rxvp.org">bonnie@rxvp.org</a>.
                   </p>
                 </article>
               </div>

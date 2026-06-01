@@ -281,7 +281,11 @@ export default function Panels() {
                   Cost may be divided between ERGs or functional areas. The Celebration Days Series and Emerging Markets
                   Series are sold together as one RxVP package.
                 </p>
-                <a href="mailto:bonnie@rxvp.org">bonnie@rxvp.org</a>
+                <p>
+                  For more information please contact Bonnie Lappin{" "}
+                  <a href="mailto:bonnie@rxvp.org">bonnie@rxvp.org</a> or Dr. Deepa Desai{" "}
+                  <a href="mailto:deepa@rxvp.org">deepa@rxvp.org</a>.
+                </p>
               </aside>
             </section>
           </div>

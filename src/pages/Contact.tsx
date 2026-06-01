@@ -109,8 +109,6 @@ export default function Contact() {
                     Bureau platform and considered for upcoming events.
                   </p>
                   <p className="mb-8">
-                    Beta phase will be Fall, 2026.
-                    <br />
                     1-2 speaking engagements per person.
                   </p>
                 </div>
